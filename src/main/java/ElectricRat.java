@@ -27,7 +27,7 @@ public class ElectricRat extends Monster {
     }
 
     /**
-     * Rolls and sets the attackPoints using ATTACK_MIN and ATTACK_MAX
+     * Rolls and sets the attackPoints using ATTACK_MIN and ATTACK_MAX.
      */
     @Override
     public void setAttackPoints() {
@@ -35,7 +35,7 @@ public class ElectricRat extends Monster {
     }
 
     /**
-     * Rolls and sets the defensePoints using DEFENSE_MIN and DEFENSE_MAX
+     * Rolls and sets the defensePoints using DEFENSE_MIN and DEFENSE_MAX.
      */
     @Override
     public void setDefensePoints() {
@@ -49,5 +49,14 @@ public class ElectricRat extends Monster {
     @Override
     public void setDefensePoints(int value) {
         this.defensePoints = value;
+    }
+
+    /**
+     * Returns ElectricRat's signature phrase.
+     * @return The catchphrase string.
+     */
+    @Override
+    public String getPhrase() {
+        return "'Lectric! 'Lectric!";
     }
 }
